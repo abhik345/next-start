@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import styles from "../page.module.css";
 import { useRouter } from "next/navigation";
 
@@ -18,6 +19,10 @@ const About = () => {
       >
         Go to Login Page
       </button>
+      <br />
+      <Link href="/about/aboutcollege">Go to About college page</Link>
+      <br />
+      <Link href="/about/aboutstudent">Go to About student page</Link>
     </div>
   );
 };

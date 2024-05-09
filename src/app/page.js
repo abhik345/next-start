@@ -1,13 +1,6 @@
 "use client";
 import { useState } from "react";
 import styles from "./page.module.css";
-const userVreed = (props) =>{
-  return (
-    <div className="glo">
-      {props.name}
-    </div>
-  )
-}
 
 
 
@@ -35,7 +28,6 @@ export default function Home() {
       <h1>Event {name}</h1>
       <button onClick={() => handleChange("bhaskar")}>Click</button>
       <InnerComponent/>
-      <userVreed name={name}/>
     </main>
   );
 }
